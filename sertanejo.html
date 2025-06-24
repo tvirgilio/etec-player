@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music World - Sertanejo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <input type="checkbox" id="bt_menu">
+    <label for="bt_menu">&#9776;</label>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Artistas</a>
+                <ul>
+                    <li><a href="sertanejo.html">Sertanejo</a></li>
+                    <li><a href="#">Rock</a></li>
+                    <li><a href="#">Funk</a></li>
+                    <li><a href="#">Pop</a></li>
+                    <li><a href="#">Axé</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Shows</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="music-player-container">
+        <div class="player-container">
+            <div class="main-player">
+                <h2 class="player-title">Sertanejo Player</h2>
+                
+                <div class="album-art">
+                    <img id="album-cover" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Capa do Álbum">
+                </div>
+                
+                <div class="current-song">Selecione um artista</div>
+                
+                <div class="player-controls">
+                    <div class="controls-row">
+                        <button class="player-btn" id="prev-btn" title="Anterior">⏮</button>
+                        <button class="player-btn" id="play-btn" title="Play">▶</button>
+                        <button class="player-btn" id="pause-btn" title="Pause">⏸</button>
+                        <button class="player-btn" id="next-btn" title="Próxima">⏭</button>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <progress id="progress" value="0" max="100"></progress>
+                        <div class="time-display">
+                            <span id="current-time">0:00</span>
+                            <span id="total-time">0:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="playlist-section">
+                <h2>Playlist</h2>
+                <ul class="playlist">
+                    <!-- As músicas serão carregadas dinamicamente via JavaScript -->
+                </ul>
+            </div>
+        </div>
+    </div>
+<main class="content">
+    <h1>Artistas Sertanejos</h1>
+    <div class="genre-description">
+        <p>O sertanejo é um dos gêneros musicais mais populares do Brasil, com raízes na música caipira e que evoluiu para diferentes vertentes ao longo dos anos.</p>
+    </div>
+    
+    <!-- Container expandido para os artistas -->
+    <div class="full-width-container">
+        <div class="boxes-container">
+            <!-- Artistas Sertanejos -->
+            <div class="artist-box">
+                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Jorge & Mateus">
+                <h3>Jorge & Mateus</h3>
+                <p>Dupla sertaneja com grandes sucessos como "Propaganda" e "Amo Noite e Dia".</p>
+                <span class="category">Sertanejo Universitário</span>
+            </div>
+            <div class="artist-box">
+                <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Marília Mendonça">
+                <h3>Marília Mendonça</h3>
+                <p>Rainha da Sofrência com hits como "Infiel" e "Todo Mundo Vai Sofrer".</p>
+                <span class="category">Sertanejo Atual</span>
+            </div>
+            <div class="artist-box">
+                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Maiara & Maraisa">
+                <h3>Maiara & Maraisa</h3>
+                <p>Dupla feminina com sucessos como "10%" e "Nem Doeu".</p>
+                <span class="category">Sertanejo Universitário</span>
+            </div>
+            <div class="artist-box">
+                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Gusttavo Lima">
+                <h3>Gusttavo Lima</h3>
+                <p>Cantor e compositor com hits como "Balada" e "Cem Mil".</p>
+                <span class="category">Sertanejo Universitário</span>
+            </div>
+            <div class="artist-box">
+                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Zé Neto & Cristiano">
+                <h3>Zé Neto & Cristiano</h3>
+                <p>Dupla com sucessos como "Bebi Minha Bicicleta" e "Notificação Preferida".</p>
+                <span class="category">Sertanejo Universitário</span>
+            </div>
+            <div class="artist-box">
+                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Henrique & Juliano">
+                <h3>Henrique & Juliano</h3>
+                <p>Dupla com hits como "Cuida Bem Dela" e "Aquelas Coisas".</p>
+                <span class="category">Sertanejo Universitário</span>
+            </div>
+            <div class="artist-box">
+                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Chitãozinho & Xororó">
+                <h3>Chitãozinho & Xororó</h3>
+                <p>Lendária dupla com clássicos como "Evidências" e "Fio de Cabelo".</p>
+                <span class="category">Sertanejo Raiz</span>
+            </div>
+            <div class="artist-box">
+                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Luan Santana">
+                <h3>Luan Santana</h3>
+                <p>Cantor com sucessos como "Meteoro" e "Escreve Aí".</p>
+                <span class="category">Sertanejo Pop</span>
+            </div>
+        </div>
+
+        <!-- Subgêneros do Sertanejo -->
+        <section class="subgenres">
+            <h2>Subgêneros do Sertanejo</h2>
+            <div class="subgenre-container">
+                <div class="subgenre-box">
+                    <h3>Sertanejo Raiz</h3>
+                    <p>Mantém as características originais da música caipira, com violas e letras que falam do cotidiano rural.</p>
+                    <button class="btn-artists">Ver Artistas</button>
+                </div>
+                <div class="subgenre-box">
+                    <h3>Sertanejo Romântico</h3>
+                    <p>Focado em letras de amor e relacionamentos, popular nos anos 80 e 90.</p>
+                    <button class="btn-artists">Ver Artistas</button>
+                </div>
+                <div class="subgenre-box">
+                    <h3>Sertanejo Universitário</h3>
+                    <p>Vertente mais recente, com influências pop e batidas dançantes.</p>
+                    <button class="btn-artists">Ver Artistas</button>
+                </div>
+                <div class="subgenre-box">
+                    <h3>Sertanejo Atual</h3>
+                    <p>Fusão de elementos do sertanejo tradicional com outros gêneros contemporâneos.</p>
+                    <button class="btn-artists">Ver Artistas</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Seção de Shows Sertanejos -->
+    <section class="shows">
+        <h2>Próximos Shows Sertanejos</h2>
+        <div class="slider-container">
+            <button class="slider-arrow prev-arrow" aria-label="Slide anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="slider">
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Show Jorge & Mateus">
+                    <h3>Jorge & Mateus</h3>
+                    <p>Turnê "Terra Sem CEP" - 15/07/2023</p>
+                    <span class="location">São Paulo - SP</span>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Show Marília Mendonça">
+                    <h3>Tributo Marília Mendonça</h3>
+                    <p>Show Memorial - 30/10/2023</p>
+                    <span class="location">Curitiba - PR</span>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Show Maiara & Maraisa">
+                    <h3>Maiara & Maraisa</h3>
+                    <p>Turnê "No Dia do Seu Casamento" - 05/08/2023</p>
+                    <span class="location">Belo Horizonte - MG</span>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Show Gusttavo Lima">
+                    <h3>Gusttavo Lima</h3>
+                    <p>Turnê "Buteco do Gusttavo" - 12/11/2023</p>
+                    <span class="location">Goiânia - GO</span>
+                </div>
+            </div>
+            
+            <button class="slider-arrow next-arrow" aria-label="Próximo slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <audio id="audio-player"></audio>
+
+    <script src="script.js"></script>
+</body>
+</body>
+</html>
